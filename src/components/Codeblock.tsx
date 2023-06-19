@@ -1,40 +1,59 @@
-"use client";
+'use client'
 
-import { useState } from "react";
-import { usePython } from "react-py";
+import { useState } from 'react'
+import { usePython } from 'react-py'
+import {
+  Heading,
+  Code,
+  Textarea,
+  Button,
+  Tag,
+} from '@/tools/chakra-client-components'
 
 export default function Codeblock() {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState('')
 
   // Use the usePython hook to run code and access both stdout and stderr
-  const { runPython, stdout, stderr, isLoading, isRunning } = usePython();
+  const { runPython, stdout, stderr, isLoading, isRunning } = usePython()
 
   return (
     <>
-      {isLoading ? <p>Loading...</p> : <p>Ready!</p>}
-      <form>
-        <textarea
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="Enter your code here"
-        />
-        <input
-          type="submit"
-          value={!isRunning ? "Run" : "Running..."}
-          disabled={isLoading || isRunning}
-          onClick={(e) => {
-            e.preventDefault();
-            runPython(input);
-          }}
-        />
-      </form>
-      <p>Output</p>
-      <pre>
-        <code>{stdout}</code>
-      </pre>
-      <p>Error</p>
-      <pre>
-        <code>{stderr}</code>
-      </pre>
+      {isLoading ? (
+        <Tag colorScheme="blue">Loading Python environment...</Tag>
+      ) : (
+        <Tag colorScheme="green">Python environment ready</Tag>
+      )}
+      <Textarea
+        mt={2}
+        onChange={(e) => setInput(e.target.value)}
+        placeholder="Enter your code here"
+      />
+      <Button
+        mt={2}
+        isDisabled={isLoading || isRunning}
+        onClick={(e) => {
+          e.preventDefault()
+          runPython(input)
+        }}
+      >
+        {!isRunning ? 'Run' : 'Running...'}
+      </Button>
+      {stdout && (
+        <>
+          <Heading as="h3" size="sm">
+            Output
+          </Heading>
+          <Code>{stdout}</Code>
+        </>
+      )}
+      {stderr && (
+        <>
+          <Heading as="h3" size="sm">
+            Error
+          </Heading>
+          <Code>{stderr}</Code>
+        </>
+      )}
     </>
-  );
+  )
 }
