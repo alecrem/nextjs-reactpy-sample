@@ -6,7 +6,6 @@ import {
   Heading,
   Code,
   Textarea,
-  FormControl,
   Button,
   Tag,
 } from '@/tools/chakra-client-components'
@@ -24,22 +23,21 @@ export default function Codeblock() {
       ) : (
         <Tag colorScheme="green">Python environment ready</Tag>
       )}
-      <FormControl py="1em">
-        <Textarea
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="Enter your code here"
-        />
-        <Button
-          mt={2}
-          disabled={isLoading || isRunning}
-          onClick={(e) => {
-            e.preventDefault()
-            runPython(input)
-          }}
-        >
-          {!isRunning ? 'Run' : 'Running...'}
-        </Button>
-      </FormControl>
+      <Textarea
+        mt={2}
+        onChange={(e) => setInput(e.target.value)}
+        placeholder="Enter your code here"
+      />
+      <Button
+        mt={2}
+        isDisabled={isLoading || isRunning}
+        onClick={(e) => {
+          e.preventDefault()
+          runPython(input)
+        }}
+      >
+        {!isRunning ? 'Run' : 'Running...'}
+      </Button>
       {stdout && (
         <>
           <Heading as="h3" size="sm">
