@@ -7,6 +7,9 @@ export default function RootLayout({
 }) {
   return (
     <html>
+      <head>
+        <title>Next.js 13 + Chakra + react-py</title>
+      </head>
       <body>
         <ChakraProvider>{children}</ChakraProvider>
       </body>
