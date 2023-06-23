@@ -15,6 +15,10 @@ export default function Home() {
         </Box>
         <hr />
         <Box>
+          <Link href="https://qiita.com/alecrem/items/54b6d989f8ccf109efe1">
+            記事を読む
+          </Link>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
           <Link href="https://github.com/alecrem/nextjs-reactpy-sample">
             View Repo
           </Link>
