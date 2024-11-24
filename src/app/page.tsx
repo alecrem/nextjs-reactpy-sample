@@ -1,6 +1,5 @@
 'use client'
 
-import { Container, Heading, Box, Link } from '@/tools/chakra-client-components'
 import { PythonProvider } from 'react-py'
 
 import Codeblock from '@/components/Codeblock'
@@ -8,22 +7,28 @@ import Codeblock from '@/components/Codeblock'
 export default function Home() {
   return (
     <PythonProvider>
-      <Container mt="4em">
-        <Heading>Next.js 13 + Chakra + react-py</Heading>
-        <Box my="2em">
+      <div
+        style={{
+          margin: '2em 1em',
+          fontFamily:
+            "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+        }}
+      >
+        <h1>Next.js + react-py</h1>
+        <div style={{ marginTop: '2em', marginBottom: '2em' }}>
           <Codeblock />
-        </Box>
+        </div>
         <hr />
-        <Box>
-          <Link href="https://qiita.com/alecrem/items/54b6d989f8ccf109efe1">
+        <div>
+          <a href="https://qiita.com/alecrem/items/54b6d989f8ccf109efe1">
             記事を読む
-          </Link>
+          </a>
           &nbsp;&nbsp;|&nbsp;&nbsp;
-          <Link href="https://github.com/alecrem/nextjs-reactpy-sample">
+          <a href="https://github.com/alecrem/nextjs-reactpy-sample">
             View Repo
-          </Link>
-        </Box>
-      </Container>
+          </a>
+        </div>
+      </div>
     </PythonProvider>
   )
 }
