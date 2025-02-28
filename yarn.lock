@@ -2807,10 +2807,10 @@ react-is@^16.13.1, react-is@^16.7.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react-py@^1.11.2:
-  version "1.11.2"
-  resolved "https://registry.yarnpkg.com/react-py/-/react-py-1.11.2.tgz#04280fa8a8e7234b48063514d4889b3004ea82b1"
-  integrity sha512-V9PLvcPKps/YcspKs5HA+7YIVJfrOsKI7Kiryh+U7l7TBMjXqurgvhMPIe3Zsf/eAs56r53akTdom5/OxNYHQg==
+react-py@^1.11.3:
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/react-py/-/react-py-1.11.3.tgz#4bdda48621f722b42f5e1d4fb7969e3cc4fcb24e"
+  integrity sha512-LHWuBOPl4k2zvBzPWGHyPSRSWJ20XnjdUgWhf4WyXSUv7gn1uMcg9cJdCJEf8hzlMH/Lbe5DETb8ywfoQoMiHA==
   dependencies:
     comlink "^4.4.1"
 
