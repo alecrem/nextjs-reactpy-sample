@@ -16,7 +16,7 @@
     "@types/react-dom": "19.1.6",
     "autoprefixer": "10.4.21",
     "eslint": "9.32.0",
-    "eslint-config-next": "15.4.4",
+    "eslint-config-next": "15.4.5",
     "framer-motion": "^12.23.12",
     "next": "15.4.5",
     "postcss": "8.5.6",
