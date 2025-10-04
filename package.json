@@ -24,6 +24,6 @@
     "react-dom": "19.2.0",
     "react-py": "^1.11.5",
     "tailwindcss": "4.1.13",
-    "typescript": "5.9.2"
+    "typescript": "5.9.3"
   }
 }
