@@ -17,7 +17,7 @@
     "autoprefixer": "10.4.23",
     "eslint": "9.39.2",
     "eslint-config-next": "16.1.1",
-    "framer-motion": "^12.24.12",
+    "framer-motion": "^12.26.1",
     "next": "16.1.1",
     "postcss": "8.5.6",
     "react": "19.2.3",
