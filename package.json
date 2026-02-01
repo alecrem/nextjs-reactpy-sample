@@ -11,7 +11,7 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
-    "@types/node": "25.0.10",
+    "@types/node": "25.1.0",
     "@types/react": "19.2.10",
     "@types/react-dom": "19.2.3",
     "autoprefixer": "10.4.23",
