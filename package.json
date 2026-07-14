@@ -19,7 +19,7 @@
     "eslint-config-next": "16.2.10",
     "framer-motion": "^12.42.2",
     "next": "16.2.10",
-    "postcss": "8.5.18",
+    "postcss": "8.5.19",
     "react": "19.2.7",
     "react-dom": "19.2.7",
     "react-py": "^1.11.7",
